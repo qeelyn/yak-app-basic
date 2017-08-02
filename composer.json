@@ -1,6 +1,6 @@
 {
   "name": "yak/yak-app-basic",
-  "description": "yak的宿主项目",
+  "description": "yak架构下的应用",
   "minimum-stability": "dev",
   "repositories": [
     {
