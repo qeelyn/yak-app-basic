@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+# yii console commands
+/yii
+/yii_test
+/yii_test.bat
+# phpstorm project files
+.idea
+# composer vendor dir
+/vendor
+node_modules
+/watchers.xml
+/composer.lock
+# Mac DS_Store Files
+.DS_Store
+# windows thumbnail cache
+Thumbs.db
+/web/uploads/
