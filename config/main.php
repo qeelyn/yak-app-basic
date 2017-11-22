@@ -76,7 +76,10 @@ $config = [
             'directoryLevel'=> 0,
         ],
         'user' => [
-            'identityClass' => 'yak\ucenter\ContextUser',
+            'identityClass' => 'app\components\User',
+//            'loginUrl' => ['/ucenter/login/index'],
+            'on afterLogin' => ['app\components\User', 'onAfterLogin'],
+            'on afterLogout' => ['app\components\User', 'onAfterLogout'],
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -97,7 +100,7 @@ $config = [
             'rules' => require (__DIR__ . '/routes.php'),
         ],
         'authManager' => [
-            'class' => 'yak\ucenter\rbac\AuthManager',
+            'class' => 'yak\framework\rbac\DbManager',
         ],
         'assetManager' => [
             'appendTimestamp'=>true,

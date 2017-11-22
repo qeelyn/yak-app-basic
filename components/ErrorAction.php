@@ -197,9 +197,6 @@ class ErrorAction extends Action
             'code' => $this->getExceptionCode(),
             'message' => $this->getExceptionMessage(),
         ];
-//        if($exception instanceof HttpException){
-//            $current['code'] = $exception->statusCode;
-//        }
         $result = [
             'errors' => [$current],
         ];
